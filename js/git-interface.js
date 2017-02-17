@@ -5,7 +5,8 @@ var Finduser = require('./../js/gitbackend.js').findusermodule;
 $(document).ready(function(){
   $('#submit').click(function(event){
     event.preventDefault();
-    $('.output').toggle();
+    $('.key').show();
+    $('.output').empty();
     var finder = new Finduser($('#username').val());
     $.get(finder.url).then(function(response){
       $('#login').append(response.login);
