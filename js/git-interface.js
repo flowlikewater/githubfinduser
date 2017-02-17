@@ -9,6 +9,8 @@ $(document).ready(function(){
     $('.output').empty();
     var finder = new Finduser($('#username').val());
     $.get(finder.url).then(function(response){
+      console.log(response);
+      $('#photo').append('<img style="height: 200px; width: 200px;" src="'+response.avatar_url+'"/>');
       $('#login').append(response.login);
       $('#id').append(response.id);
       $('#name').append(response.name);

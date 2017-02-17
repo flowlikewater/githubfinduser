@@ -12,12 +12,12 @@
     <h3 id='output' style='text-align: center;'></h3>
     <br>
     <h1 style='text-align: center'>Github User Lookup</h1>
-    <h2 style='text-align: center'> Users may enter a GitHub username into a form, submit it <br>  and see names and descriptions of that person's public repositories</h2>
     <form style='text-align: center; padding: 15px;'>
-      <input id='username' type='text'></input>
-      <input id='submit' type='submit'></input>
+      <input id='username' type='text' style='height: 35px;'></input>
+      <button class='btn btn-success' id='submit' type='submit'>Submit</button>
     </form>
     <div class='container results' style='text-align: center'>
+      <h3 class='key'><span class='output' id='photo'></span></h3>
       <h3 class='key'>Login: <span class='output' id='login'></span></h3>
       <h3 class='key'>ID: <span class='output' id='id'></span></h3>
       <h3 class='key'>Name:  <span class='output' id='name'></span></h3>
